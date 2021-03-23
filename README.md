@@ -2,8 +2,20 @@
 [Tema2 Limbaje Formale si Automate (2020-2021, seria CB)] 
 
 
-Tema a presupun construirea unui program care converteste un NFA intr-un DFA.
+Tema a presupun construirea unui program care converteste un NFA intr-un DFA folosind algoritmul de Subset Construction.
 
+#### RULARE
+      
+      python3 main.py <input−file> <output−file>
+      
+      Fisierul de input descrie DFA-ul, iar fisierul de output contine descrierea NFA-ului rezultat 
+      din aplicarea algoritmului de Subset Construction. Formatul fisierelor este urmatorul:
+          - pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
+          - pe a doua linie, lista de stari finale, separate de cate un spatiu
+          - pe urmatoarele linii, pana la sfarsitul inputului, cate o tranzitie, 
+            constand ıntr-o stare, un simbol,  apoi o lista de stari urmatoare
+
+#### IMPLEMENTARE
 Am inceput prin citirea datelor de intrare si constructia NFA-ului in "compute_nfa".
 Tranzitiile au fost salvate sub forma unui dictionar in care cheia era starea de
 la care pornea tranzitia si elementele erau tupluri de forma (simbol, stari urmatoare).
