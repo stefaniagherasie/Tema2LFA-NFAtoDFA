@@ -3,7 +3,7 @@
 
 Tema a presupun construirea unui program care converteste un NFA intr-un DFA folosind algoritmul de Subset Construction.
 
-#### RULARE
+## Rulare
       
 > ``` shell
 >     python3 main.py <input−file> <output−file>
@@ -17,7 +17,7 @@ din aplicarea algoritmului de Subset Construction.
 >    - pe urmatoarele linii, pana la sfarsitul inputului, cate o tranzitie, 
       constand intr-o stare, un simbol, apoi o lista de stari urmatoare
 
-#### IMPLEMENTARE
+## Implementare
 Am inceput prin citirea datelor de intrare si constructia NFA-ului in `compute_nfa`.
 Tranzitiile au fost salvate sub forma unui dictionar in care cheia era starea de
 la care pornea tranzitia si elementele erau tupluri de forma `(simbol, stari urmatoare)`.
