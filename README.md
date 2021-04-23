@@ -11,7 +11,7 @@ Tema a presupun construirea unui program care converteste un NFA intr-un DFA fol
 **Fisierul de input** descrie DFA-ul, iar **fisierul de output** contine descrierea NFA-ului rezultat 
 din aplicarea algoritmului de Subset Construction.
 
-Formatul fisierelor este urmatorul:
+**Formatul fisierelor** este urmatorul:
 - pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
 - pe a doua linie, lista de stari finale, separate de cate un spatiu
 - pe urmatoarele linii, pana la sfarsitul inputului, cate o tranzitie, 
