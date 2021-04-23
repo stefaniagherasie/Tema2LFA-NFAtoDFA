@@ -5,17 +5,18 @@ Tema a presupun construirea unui program care converteste un NFA intr-un DFA fol
 
 ## Rulare
       
-> ``` shell
->     python3 main.py <input−file> <output−file>
-> ```
-> **Fisierul de input** descrie DFA-ul, iar **fisierul de output** contine descrierea NFA-ului rezultat 
+``` shell
+    python3 main.py <input−file> <output−file>
+```
+**Fisierul de input** descrie DFA-ul, iar **fisierul de output** contine descrierea NFA-ului rezultat 
 din aplicarea algoritmului de Subset Construction.
->
-> Formatul fisierelor este urmatorul:
->    - pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
->    - pe a doua linie, lista de stari finale, separate de cate un spatiu
->    - pe urmatoarele linii, pana la sfarsitul inputului, cate o tranzitie, 
+
+Formatul fisierelor este urmatorul:
+- pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
+- pe a doua linie, lista de stari finale, separate de cate un spatiu
+- pe urmatoarele linii, pana la sfarsitul inputului, cate o tranzitie, 
       constand intr-o stare, un simbol, apoi o lista de stari urmatoare
+<br>
 
 ## Implementare
 Am inceput prin citirea datelor de intrare si constructia NFA-ului in `compute_nfa`.
